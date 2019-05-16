@@ -1,3 +1,28 @@
 {{ define "main" }}
-HOME
+<section class="section">
+    <div class="container">
+        <div class="tile is-ancestor">
+            <div class="tile is-2 is-vertical">
+            </div>
+            <div class="tile is-8 is-vertical">
+                {{ range .Pages }}
+                <article class="tile box is-marginless is-shadowless">
+                    <div class="content">
+                        <a href="{{ .Permalink }}">
+                            <h2 class="is-size-4 has-text-dark has-text-weight-bold">
+                                {{ .Title }}
+                            </h2>
+                        </a>
+                        <p class="is-size-6 has-text-grey-light">
+                            {{ .Date.Format "January 2, 2006" }}
+                        </p>
+                    </div>
+                </article>
+                {{ end }}
+            </div>
+            <div class="tile is-2 is-vertical">
+            </div>
+        </div>
+    </div>
+</section>
 {{ end }}

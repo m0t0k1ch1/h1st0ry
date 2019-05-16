@@ -1,0 +1,17 @@
+<section class="section">
+    <div class="container">
+        <nav class="level">
+            <div class="level-item has-text-centered">
+                <a href="{{ .Site.BaseURL }}" class="button is-dark">
+                    {{ if .IsHome }}
+                    <h1>
+                        {{ .Site.Title }}
+                    </h1>
+                    {{ else }}
+                    {{ .Site.Title }}
+                    {{ end }}
+                </a>
+            </div>
+        </nav>
+    </div>
+</section>
