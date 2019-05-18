@@ -5,34 +5,24 @@
 {{ define "main" }}
 <section class="hero">
     <div class="hero-body">
-        <div class="container">
-            <div class="tile is-ancestor">
-                <div class="tile is-2 is-vertical">
-                </div>
-                <div class="tile is-8 is-vertical has-text-centered">
-                    <div class="content">
-                        <h1 class="is-size-3 has-text-dark has-text-weight-bold">
-                            {{ .Title }}
-                        </h1>
-                        <br/>
-                        <time class="is-size-5 has-text-grey-light">
-                            {{ .Date.Format "January 2, 2006" }}
-                        </time>
-                        {{ with .Params.tags }}
-                        <br /><br />
-                        {{ range . }}
-                        <a href="{{ "tags" | absURL }}/{{ . | urlize }}">
-                            <span class="tag is-small is-light">
-                                #{{ . }}
-                            </span>
-                        </a>
-                        {{ end }}
-                        {{ end }}
-                    </div>
-                </div>
-                <div class="tile is-2 is-vertical">
-                </div>
-            </div>
+        <div class="container has-text-centered">
+            <h1 class="is-size-3 has-text-dark has-text-weight-bold">
+                {{ .Title }}
+            </h1>
+            <br/>
+            <time class="is-size-5 has-text-grey-light">
+                {{ .Date.Format "January 2, 2006" }}
+            </time>
+            {{ with .Params.tags }}
+            <br /><br />
+            {{ range . }}
+            <a href="{{ "tags" | absURL }}/{{ . | urlize }}">
+                <span class="tag is-small is-light">
+                    #{{ . }}
+                </span>
+            </a>
+            {{ end }}
+            {{ end }}
         </div>
     </div>
 </section>

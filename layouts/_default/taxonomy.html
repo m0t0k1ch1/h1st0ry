@@ -1,20 +1,10 @@
 {{ define "main" }}
 <section class="hero">
     <div class="hero-body">
-        <div class="container">
-            <div class="tile is-ancestor">
-                <div class="tile is-2 is-vertical">
-                </div>
-                <div class="tile is-8 is-vertical has-text-centered">
-                    <div class="content">
-                        <h1 class="is-size-3 has-text-dark has-text-weight-bold">
-                            #{{ .Title }}
-                        </h1>
-                    </div>
-                </div>
-                <div class="tile is-2 is-vertical">
-                </div>
-            </div>
+        <div class="container has-text-centered">
+            <h1 class="is-size-3 has-text-dark has-text-weight-bold">
+                #{{ .Title }}
+            </h1>
         </div>
     </div>
 </section>
