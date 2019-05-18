@@ -1,0 +1,22 @@
+<article class="tile box is-marginless is-shadowless">
+    <div class="content">
+        <a href="{{ .Permalink }}">
+            <h2 class="is-size-4 has-text-dark has-text-weight-bold">
+                {{ .Title }}
+            </h2>
+        </a>
+        <time class="is-size-6 has-text-grey-light">
+            {{ .Date.Format "January 2, 2006" }}
+        </time>
+        {{ with .Params.tags }}
+        <br />
+        {{ range . }}
+        <a href="{{ "tags" | absURL }}/{{ . | urlize }}">
+            <span class="tag is-small is-light">
+                #{{ . }}
+            </span>
+        </a>
+        {{ end }}
+        {{ end }}
+    </div>
+</article>
