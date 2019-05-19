@@ -5,9 +5,11 @@
             <div class="tile is-2 is-vertical">
             </div>
             <div class="tile is-8 is-vertical">
-                {{ range .Pages }}
+                {{ $pag := .Paginate (where .Pages "Type" "blog") }}
+                {{ range $pag.Pages }}
                 {{ .Render "li" }}
                 {{ end }}
+                {{ partial "pagination.html" . }}
             </div>
             <div class="tile is-2 is-vertical">
             </div>

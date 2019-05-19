@@ -5,3 +5,7 @@ article.content div {
 article.content code, pre {
     font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
 }
+
+nav.pagination {
+    margin-top: 2em;
+}
