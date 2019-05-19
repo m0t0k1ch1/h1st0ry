@@ -1,3 +1,7 @@
 article.content div {
     margin-bottom: 1.5em;
 }
+
+article.content code, pre {
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+}
