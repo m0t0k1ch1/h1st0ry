@@ -2,6 +2,7 @@
 <html>
     {{ partial "head.html" . }}
     <body>
+        {{ template "_internal/google_analytics.html" . }}
         {{ partial "header.html" . }}
         {{ block "main" . }}{{ end }}
         {{ partial "footer.html" . }}
