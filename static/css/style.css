@@ -3,14 +3,18 @@ div.not-found {
     padding-bottom: 12em;
 }
 
-nav.pagination {
-    margin-top: 2em;
-}
-
 article.content div {
     margin-bottom: 1.5em;
 }
 
 article.content code, pre {
     font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+}
+
+nav.pagination {
+    margin-top: 2em;
+}
+
+footer a:hover {
+    color: hsl(0, 0%, 71%) !important;
 }
