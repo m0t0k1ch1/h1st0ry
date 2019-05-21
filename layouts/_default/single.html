@@ -10,9 +10,11 @@
                 {{ .Title }}
             </h1>
             <br/>
+            {{ if .Date }}
             <time class="is-size-5 has-text-grey-light">
                 {{ .Date.Format "January 2, 2006" }}
             </time>
+            {{ end }}
             {{ with .Params.tags }}
             <br /><br />
             {{ range . }}
