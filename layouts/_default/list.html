@@ -1,14 +1,16 @@
 {{ define "main" }}
-<section class="section">
+<section class="article-summaries section">
     <div class="container">
         <div class="tile is-ancestor">
             <div class="tile is-2 is-vertical">
             </div>
             <div class="tile is-8 is-vertical">
                 {{ $pag := .Paginate (where .Pages "Type" "blog") }}
-                {{ range $pag.Pages }}
-                {{ .Render "li" }}
-                {{ end }}
+                <div class="block">
+                    {{ range $pag.Pages }}
+                    {{ .Render "li" }}
+                    {{ end }}
+                </div>
                 {{ partial "pagination.html" . }}
             </div>
             <div class="tile is-2 is-vertical">

@@ -3,25 +3,28 @@
 {{ end }}
 
 {{ define "main" }}
-<section class="hero">
+<section class="article-summaries-hero hero">
     <div class="hero-body">
         <div class="container has-text-centered">
-            <h1 class="is-size-3 has-text-dark has-text-weight-bold">
-                #{{ .Title }}
-            </h1>
+            <div class="block">
+                <h1 class="title">
+                    #{{ .Title }}
+                </h1>
+            </div>
         </div>
     </div>
 </section>
-<br />
-<section class="section">
+<section class="article-summaries section">
     <div class="container">
         <div class="tile is-ancestor">
             <div class="tile is-2 is-vertical">
             </div>
             <div class="tile is-8 is-vertical">
-                {{ range .Pages }}
-                {{ .Render "li" }}
-                {{ end }}
+                <div class="block">
+                    {{ range .Pages }}
+                    {{ .Render "li" }}
+                    {{ end }}
+                </div>
             </div>
             <div class="tile is-2 is-vertical">
             </div>
