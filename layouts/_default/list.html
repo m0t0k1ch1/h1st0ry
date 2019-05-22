@@ -5,7 +5,7 @@
             <div class="tile is-2 is-vertical">
             </div>
             <div class="tile is-8 is-vertical">
-                {{ $type := .Params.MainPageType }}
+                {{ $type := .Site.Params.MainPageType }}
                 {{ if not $type }}
                     {{ $type = "post" }}
                 {{ end }}
