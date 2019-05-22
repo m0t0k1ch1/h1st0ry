@@ -13,6 +13,11 @@ section.article-summaries h2:hover
     text-decoration: underline;
 }
 
+section.article-summaries article:not(:last-child)
+{
+    border-bottom: 1px solid hsl(0, 0%, 96%);
+}
+
 section.article-summaries nav.pagination
 {
     padding: 1.25rem;
