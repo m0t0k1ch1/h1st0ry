@@ -40,7 +40,7 @@ section.article-content article.content div.tweet:not(:last-child), div.vimeo:no
 
 section.article-not-found div.content
 {
-    padding: 10em 0;
+    padding: 10rem 0;
 }
 
 footer a:hover
