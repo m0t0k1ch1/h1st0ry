@@ -1,6 +1,11 @@
 .tight-block:not(:last-child)
 {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.wide-block:not(:last-child)
+{
+    margin-bottom: 3rem;
 }
 
 section.article-summaries h2:hover
