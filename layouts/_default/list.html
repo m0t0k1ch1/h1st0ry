@@ -9,7 +9,7 @@
                 {{ if not $type }}
                     {{ $type = "post" }}
                 {{ end }}
-                {{ $pag := .Paginate (where .Pages "Type" $type ) }}
+                {{ $pag := .Paginate (where .Pages "Type" $type) }}
                 <div class="block">
                     {{ range $pag.Pages }}
                     {{ .Render "li" }}
