@@ -1,23 +1,34 @@
-.block-tight:not(:last-child) {
+.tight-block:not(:last-child)
+{
     margin-bottom: 0.5rem;
 }
 
-section.article-summaries h2:hover {
+section.article-summaries h2:hover
+{
     text-decoration: underline;
 }
 
-section.article-summaries nav.pagination {
+section.article-summaries nav.pagination
+{
     padding: 1.25rem;
 }
 
-section.article-content article.content code, pre {
+section.article-content article.content code, pre
+{
     font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
 }
 
-section.article-not-found div.block {
+section.article-content div.tweet:not(:last-child), div.vimeo:not(:last-child), div.youtube:not(:last-child)
+{
+    margin-bottom: 1.5rem;
+}
+
+section.article-not-found div.block
+{
     padding: 10em 0;
 }
 
-footer a:hover {
+footer a:hover
+{
     color: hsl(0, 0%, 71%) !important;
 }
