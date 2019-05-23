@@ -1,7 +1,7 @@
 name        = 'h1st0ry'
 license     = 'MIT'
 licenselink = 'https://github.com/m0t0k1ch1/h1st0ry/blob/master/LICENSE'
-description = 'A minimal, engineer-friendly Hugo theme based on Bulma.'
+description = 'A minimal, engineer-friendly Hugo theme built with Bulma.'
 homepage    = 'https://github.com/m0t0k1ch1/h1st0ry'
 tags        = ['blog', 'bulma', 'clean', 'disqus', 'google analytics', 'light', 'minimal', 'responsive', 'simple', 'syntax highlighting', 'white']
 features    = ['math rendering by katex', 'responsive design by bulma', 'share buttons by addthis', 'shortcode for github', 'syntax highlighting by chroma']
