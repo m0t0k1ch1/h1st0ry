@@ -8,14 +8,24 @@
     margin-bottom: 3rem;
 }
 
+section.article-summaries article:not(:last-child)
+{
+    border-bottom: 1px solid hsl(0, 0%, 96%);
+}
+
 section.article-summaries h2:hover
 {
     text-decoration: underline;
 }
 
-section.article-summaries article:not(:last-child)
+section.article-summaries span.button
 {
-    border-bottom: 1px solid hsl(0, 0%, 96%);
+    margin-bottom: 0.25rem;
+}
+
+section.article-summaries time
+{
+    margin-left: 0.25rem;
 }
 
 section.article-summaries nav.pagination
