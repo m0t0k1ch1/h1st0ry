@@ -23,7 +23,8 @@ section.article-summaries nav.pagination
     padding: 1.25rem;
 }
 
-section.article-content article.content h2 {
+section.article-content article.content h2
+{
     padding: 0.5rem 0;
     border-bottom: 1px solid hsl(0, 0%, 96%);
 }
@@ -33,9 +34,19 @@ section.article-content article.content code, pre
     font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
 }
 
-section.article-content article.content div.tweet:not(:last-child), div.vimeo:not(:last-child), div.youtube:not(:last-child)
+section.article-content article.content div.github:not(:last-child), div.tweet:not(:last-child), div.vimeo:not(:last-child), div.youtube:not(:last-child)
 {
     margin-bottom: 1.5rem;
+}
+
+section.article-content article.content div.github div.box
+{
+    background-color: #24292e;
+}
+
+section.article-content article.content div.github div.box:hover
+{
+    background-color: hsl(0, 0%, 21%) !important;
 }
 
 section.article-not-found div.content

@@ -1,0 +1,22 @@
+<div class="github">
+    <a href="https://github.com/{{ .Get 0 }}/{{ .Get 1 }}" target="_blank">
+        <div class="box is-inline-block">
+            <article class="media">
+                <div class="media-left">
+                <span class="icon is-large">
+                    <i class="fab fa-3x fa-inverse fa-github">
+                    </i>
+                </span>
+                </div>
+                <div class="media-content">
+                    <p class="title is-size-4 has-text-light is-marginless">
+                        {{ .Get 1 }}
+                    </p>
+                    <p class="subtitle is-size-6 has-text-grey is-marginless">
+                        created by @{{ .Get 0 }}
+                    </p>
+                </div>
+            </article>
+        </div>
+    </a>
+</div>
