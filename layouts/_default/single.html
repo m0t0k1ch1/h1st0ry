@@ -47,5 +47,19 @@
         </div>
     </div>
 </section>
-{{ template "_internal/disqus.html" . }}
+{{ if .Site.DisqusShortname }}
+<section class="article-comments section">
+    <div class="container">
+        <div class="tile is-ancestor">
+            <div class="tile is-2 is-vertical">
+            </div>
+            <div class="tile is-8 is-vertical">
+                {{ template "_internal/disqus.html" . }}
+            </div>
+            <div class="tile is-2 is-vertical">
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
 {{ end }}
