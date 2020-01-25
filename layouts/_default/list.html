@@ -9,9 +9,13 @@
                 {{ if not $type }}
                     {{ $type = "post" }}
                 {{ end }}
-                {{ $pag := .Paginate (where .Pages "Type" $type) }}
+                {{ if .IsHome }}
+                    {{ .Scratch.Set "pag" (.Paginate (where .Site.RegularPages "Type" $type)) }}
+                {{ else }}
+                    {{ .Scratch.Set "pag" (.Paginate (where .Pages "Type" $type)) }}
+                {{ end }}
                 <div class="block">
-                    {{ range $pag.Pages }}
+                    {{ range (.Scratch.Get "pag").Pages }}
                     {{ .Render "li" }}
                     {{ end }}
                 </div>
