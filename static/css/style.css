@@ -44,7 +44,7 @@ section.article-content article.content code, pre
     font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
 }
 
-section.article-content article.content div.github:not(:last-child), div.tweet:not(:last-child), div.vimeo:not(:last-child), div.youtube:not(:last-child)
+section.article-content article.content div.blank, div.github:not(:last-child), div.tweet:not(:last-child), div.vimeo:not(:last-child), div.youtube:not(:last-child)
 {
     margin-bottom: 1.5rem;
 }
